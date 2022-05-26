@@ -1,0 +1,214 @@
+*{
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* NAVBAR */
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 72px;
+    position: fixed;
+    background-color: #18278F;
+}
+
+.right-side{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 15px;
+}
+
+.left-side{
+    padding: 15px;
+}
+
+li{
+    list-style: none;
+    font-size: 20px;
+}
+
+li a:hover{
+    color: red;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.main-title a:hover{
+    color: red;
+}
+
+.main-title a{
+    font-size: 35px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* INTRO */
+
+.intro{
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    align-items: center;
+    background-image: linear-gradient(
+      60deg,
+      rgba(57, 60, 90, 0.85),
+      rgba(211, 32, 32, 0.705)
+    ),
+    url(https://dam.smashmexico.com.mx/wp-content/uploads/2018/09/07142333/spidermanbio_portada.jpg);
+  background-position: center;
+  background-size: cover;
+  justify-content: space-between;
+}
+
+.intro-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 50px;
+    width: 40%;
+}
+
+.intro-text h1{
+    color: white;
+}
+
+.intro-text p{
+    color: white;
+}
+
+.main-img{
+    max-width: 200px;
+    height: auto;
+    margin-right: 50px;
+    gap: 8px;
+}
+
+.left-main{
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    gap: 8px;
+}
+
+.left-main p{
+    color: white;
+}
+
+/* PANELS */ 
+
+.panel{
+    display: flex;
+    background-color: rgba(39, 22, 136, 0.986);
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+
+.panel-text{
+    color: white;
+    padding: 50px 50px;
+}
+
+.panel-container{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px 20px;
+}
+
+.panel-son{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.panel-icon{
+    width: 200px;
+    height: 264px;
+    border: 9px solid rgba(59, 4, 4, 0.795);
+}
+
+.panel-son h2{
+    font-size: 15px;
+}
+
+/* QUOTE */
+
+.quote{
+    display: flex;
+    background-color: rgba(192, 5, 5, 0.973);
+    padding: 100px 90px 90px 100px;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.quote h1{
+    font-style: italic;
+}
+
+.quote p{
+    text-align: end;
+    font-size: 25px;
+}
+
+/* CONTACT */
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+    padding: 80px 30px;
+}
+
+.contact-text{
+    background-color: #e61313;
+    display: flex;
+    justify-content: space-between;
+    gap: 500px;
+    border: 8px solid black;
+    padding: 20px 10px;
+    border-radius: 20px;
+}
+
+button{
+    color: black;
+    font-size:15px;
+    width:140px;
+    height:50px;
+    border-width:1px;
+    color:#ffffff;
+    border-color:#337fed;
+    font-weight:bold;
+    border-top-left-radius:6px;
+    border-top-right-radius:6px;
+    border-bottom-left-radius:6px;
+    border-bottom-right-radius:6px;
+    box-shadow:inset 0px 1px 0px 0px #97c4fe;
+    text-shadow:inset 0px 1px 0px #1570cd;
+    background:linear-gradient(#3d94f6, #1e62d0)
+}
+
+button:hover{
+    background: linear-gradient(#1e62d0, #3d94f6);
+}
+
+footer{
+    background-color: #0f1d2b;
+    text-align: center;
+    padding: 5px;
+}
