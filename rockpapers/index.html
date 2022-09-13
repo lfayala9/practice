@@ -4,13 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Rock Paper Scissors</title>
-    <script src="script.js"></script>
 </head>
 <body>
-    <input type="button" value="rock">
-    <input type="button" value="paper">
-    <input type="button" value="scissors">
+    <header>
+        <h1>Rock, Paper, Scissors</h1>
+    </header>
+    <main>
+        <div class="board">
+            <h2 id="info">CHOOSE</h2>
+            <h3 id="message">First to win five, wins the game</h3>
+        </div>
+        <div class="scorescontainer">
+            <div class="scores">
+                <p>User:</p>
+                <h1 id="userScore">0</h1>
+            </div>
+            <div class="scores">
+                <p>Computer:</p>
+                <h1 id="computerScore">0</h1>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="rock_" class="rockBtn">
+                <img src="https://img2.freepng.es/20180404/rle/kisspng-computer-icons-punch-fist-punch-5ac4fb5667e245.6121033115228588384255.jpg">
+            </button>
+            <button id="paper_" class="paperBtn">
+                <img src="https://img1.pnghut.com/t/20/19/7/6rXaG7sh5v/area-symbol-fingerprint-finger-fingercounting.jpg">               
+            </button>
+            <button id="sci_" class="sciBtn">
+                <img src="https://toppng.com//public/uploads/preview/hand-scissors-icon-scissors-hand-icon-11553451026r3johduzxr.png">
+            </button>
+        </div>
+    </main>
+    <footer>
+        <p>By Luis Ayala</p>
+        <a href="https://github.com/lfayala9" target="https://github.com/lfayala9"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"></a>
+    </footer>
+    <script src="./main.js"></script>
 </body>
 </html>
