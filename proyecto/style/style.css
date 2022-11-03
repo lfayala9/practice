@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  color: white;
+}
+
+body {
+  margin: none;
+}
+
+html {
+  border: solid black 4px;
+  border-bottom: none;
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  min-width: 99.6vw;
+  min-height: 96vh;
+  background-color: #DA4167;
+  align-items: center;
+  justify-content: center;
+}
+.container .board {
+  height: 33rem;
+  width: 74rem;
+  background-color: #242526;
+  border: solid black 4px;
+  border-right: 10px solid black;
+  border-bottom: 10px solid black;
+}
+.container .board .board-header {
+  display: flex;
+  background-color: black;
+  height: 1.8rem;
+  color: white;
+  margin: 0px;
+  justify-content: space-between;
+}
+.container .board .board-header p {
+  font-family: "Source Code Pro", monospace;
+  padding: 0.2rem 1.8rem;
+}
+.container .board .inv-div {
+  width: 35rem;
+  height: 26rem;
+  background-image: url(../assets/screen.png);
+  background-size: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 5rem;
+  border: solid black 4px;
+}
+.container .board .inv-div .icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .board .inv-div .icon-file {
+  align-self: flex-end;
+  fill: #7FFF5B;
+  margin-bottom: 8rem;
+  opacity: 2;
+}
+.container .board .inv-div .icon-file:hover {
+  fill: #1b221a;
+}
+.container .board .inv-div .icon-bug {
+  align-self: center;
+  fill: #DA4167;
+}
+.container .board .inv-div .icon-bug:hover {
+  fill: #5f1d2d;
+}
+.container .board .inv-div svg {
+  width: 4rem;
+  height: 4rem;
+}
+.container .board .inv-div .bi-folder-fill:hover {
+  fill: #083344;
+}
+.container .board .inv-div span {
+  -webkit-text-stroke: 0.3px black;
+  text-shadow: 2px 2px 2px black;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.container .board .my-card {
+  position: absolute;
+  width: 30rem;
+  height: 16rem;
+  background-color: #242526;
+  border: solid black 4px;
+  border-bottom: 9px solid black;
+  border-right: 9px solid black;
+}
+.container .board .my-card #dragDivHeader {
+  cursor: grab;
+  align-items: center;
+  font-family: "Source Code Pro", monospace;
+}
+.container .board .my-card .img-border1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFF51;
+  margin-top: 1.25rem;
+  margin-left: 0.6rem;
+  width: 8.5rem;
+  height: 8.5rem;
+}
+.container .board .my-card img {
+  width: 7rem;
+  height: 7rem;
+  border: solid 10px #4C7BFF;
+}
+.container .board .my-card svg {
+  margin-right: 1.25rem;
+  transition: 0.4s;
+}
+.container .board .my-card svg:hover {
+  transform: translateY(-4px);
+}
+.container .board .my-card .bi-github:hover {
+  fill: rgb(168, 85, 55);
+}
+.container .board .my-card .bi-twitter:hover {
+  fill: #00acee;
+}
+.container .board .my-card .bi-spotify:hover {
+  fill: #1DB954;
+}
+.container .board .my-card .bi-instagram:hover {
+  fill: #cd486b;
+}
+
+/*# sourceMappingURL=style.css.map */

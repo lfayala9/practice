@@ -1,0 +1,157 @@
+$border-style: solid black 4px; 
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+
+body{
+    margin: none;
+}
+
+html{
+    border: $border-style;
+    border-bottom: none;
+    background-color: black;
+}
+
+.container{
+    display: flex;
+    min-width: 99.6vw;
+    min-height: 96vh;
+    background-color: #DA4167;
+    align-items: center;
+    justify-content: center;
+
+    .board{
+        height: 33rem;
+        width: 74rem;
+        background-color: #242526;
+        border: $border-style;
+        border-right: 10px solid black;
+        border-bottom: 10px solid black;
+
+        .board-header{
+            display: flex;
+            background-color: black;
+            height: 1.8rem;
+            color: white;
+            margin: 0px;
+            justify-content: space-between;
+
+            p{
+                font-family: 'Source Code Pro', monospace;
+                padding: 0.2rem 1.8rem;
+            }
+        }
+        .inv-div{
+            width: 35rem;
+            height: 26rem;
+            background-image: url(../assets/screen.png);
+            background-size: 100%;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            right: 5rem;
+            border: $border-style;
+
+            .icon-container{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .icon-file{
+                align-self:flex-end;
+                fill: #7FFF5B;
+                margin-bottom: 8rem;
+                opacity: 2;
+
+                &:hover{
+                    fill: #1b221a
+                }
+            }
+
+            .icon-bug{
+                align-self: center;
+                fill: #DA4167;
+                &:hover{
+                    fill: #5f1d2d
+                }
+
+            
+            }
+            svg{
+                width: 4rem; 
+                height: 4rem
+            }
+            .bi-folder-fill:hover{
+                fill: #083344;
+            }
+
+            span{
+                -webkit-text-stroke: 0.3px black;
+                text-shadow: 2px 2px 2px black;
+                color: white;
+                background-color: transparentize($color: #000000, $amount: 0.3);
+            }
+        }
+
+        .my-card{
+            position: absolute;
+            width: 30rem;
+            height: 16rem;
+            background-color: #242526;
+            border: $border-style;
+            border-bottom: 9px solid black;
+            border-right: 9px solid black;
+
+            #dragDivHeader{
+                cursor: grab;
+                align-items: center;
+                font-family: 'Source Code Pro', monospace;
+            }
+            .img-border1{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #FFFF51;
+                margin-top: 1.25rem;
+                margin-left: 0.6rem;
+                width: 8.5rem;
+                height: 8.5rem;
+            }
+            img{
+                width: 7rem;
+                height: 7rem;
+                border: solid 10px #4C7BFF;
+            }
+
+            svg{
+                margin-right: 1.25rem;
+                transition: 0.4s;
+
+                &:hover{
+                    transform: translateY(-4px);
+                }
+            }
+
+            .bi-github:hover{
+                fill: rgb(168, 85, 55);
+            }
+
+            .bi-twitter:hover{
+                fill: #00acee
+            }
+
+            .bi-spotify:hover{
+                fill: #1DB954
+            }
+
+            .bi-instagram:hover{
+                fill: #cd486b
+            }
+        }
+    }
+}
