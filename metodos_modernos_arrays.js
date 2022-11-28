@@ -1,4 +1,4 @@
-//!Modificar un elemento en particular con .map()
+//!Modificar un elemento en particular con .map() -> modifica arrays o objetos
 
 let arrayBool = [true,  true,  true,  false,
     true,  true,  true,  true ,
@@ -11,7 +11,7 @@ let falseBool = arrayBool.map((bool, i)=>{
     return (bool == false) ? `${i + 1} - ${bool}`: bool;
 })
 
-//TODO Ordernar de mayor a menor o menor a mayor
+//TODO Ordernar de mayor a menor o menor a mayor con sort() -> ordena un array o objeto
 const listaObjetos = [
     {nombre: "luis", edad: 29},
     {nombre: "pedro", edad: 25},
