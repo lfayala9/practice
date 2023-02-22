@@ -1,0 +1,19 @@
+{
+  "name": "proyecto5",
+  "version": "1.0.0",
+  "description": "proyecto",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "js"
+  ],
+  "author": "luis",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^3.3.0",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "type": "module"
+}
