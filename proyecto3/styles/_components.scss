@@ -1,0 +1,92 @@
+@mixin header {
+    background-color: black;
+    font-family: 'Source Code Pro', monospace;
+    color: whitesmoke;
+    border: solid whitesmoke 4px;
+    
+}
+$border-style: black solid 4px;
+
+.board{
+    .board-header{
+        @include header();
+        border-radius: 10px;
+    }
+}
+
+.card{
+    .card-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include header()
+    }
+    .card-cont{
+        border: $border-style;
+    }
+    hr{
+        margin-bottom: 8px;
+    }
+    .card-foot{
+        svg{
+            margin-right: 2.5rem;
+        }
+        .bi{
+            cursor: pointer;
+            transition: 0.4s;
+            &:hover{
+                transform: translateY(-5px);
+            }
+        }
+        .bi-github{
+            &:hover{
+                fill: rgb(209, 112, 76);
+            }
+        }
+        .bi-twitter{
+            &:hover{
+                fill: #1DA1F2;
+            }
+        }
+        .bi-spotify{
+            &:hover{
+                fill:#1DB954;
+            }
+        }
+        .bi-instagram{
+            &:hover{
+                fill: rgb(218, 24, 137);
+            }
+        }
+    }
+}
+
+.icons{
+    color: whitesmoke;
+    
+    .icon{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.window{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-image: url(../assets/city.png);
+    background-size: 120%;
+    .icon{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        height: 30%;
+
+        &:hover{
+            cursor: pointer;
+            opacity: 0.6;
+        }
+    }
+}
